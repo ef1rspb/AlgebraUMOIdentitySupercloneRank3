@@ -13,8 +13,8 @@ namespace AlgebraUMOIdentitySupercloneRank3
 
 		public AlgebraOfUnaryMultioperations(List<Multioperation> generators)
         {
-            
             this.generators = new MultioperationUnary[3 + generators.Count];
+            moSet = new MultioperationUnary[512];
 			AddNullaryMultioperations();
 			Generate();
 		}
@@ -26,7 +26,8 @@ namespace AlgebraUMOIdentitySupercloneRank3
 
         public override void AddNullaryMultioperations()
 		{
-            this._multioperationArity = 1;
+            _multioperationArity = 1;
+            _multioperationRank = 3;
             Projections.Add(new MultioperationUnary(84));
             Empty = new MultioperationUnary(0);
             Full = new MultioperationUnary(511);
@@ -35,11 +36,16 @@ namespace AlgebraUMOIdentitySupercloneRank3
             generators[1] = Full;
             generators[2] = Projections[0];
 
-            set[0] = generators[0];
-            set[1] = generators[1];
-            set[2] = generators[2];
+            moSet[0] = generators[0];
+            moSet[1] = generators[1];
+            moSet[2] = generators[2];
 
-            contain = new bool[1 << (Arity * Arity)];
+            Console.WriteLine("Rank: {0}", Rank);
+            Console.WriteLine("Arity: {0}", Arity);
+            Console.WriteLine("Result: {0}", 1 << ((int)Math.Pow(Rank, Arity + 1)));
+
+            contain = new bool[1 << ((int)Math.Pow(Rank, Arity + 1))];
+            Console.WriteLine(contain.Length);
             contain[0] = true;
             contain[1] = true;
             contain[2] = true;
@@ -47,12 +53,12 @@ namespace AlgebraUMOIdentitySupercloneRank3
 
         public override void Generate()
 		{
-            for (int i = 1; i < set.Length; i++)
+            for (int i = 1; i < moSet.Length; i++)
 			{
-                Multioperation f = set[i];
-				for (int j = 1; j < set.Length; j++)
+                Multioperation f = moSet[i];
+				for (int j = 1; j < moSet.Length; j++)
 				{
-					Multioperation g = set[j];
+					Multioperation g = moSet[j];
 
 					if (f == Empty ||
 						g == Empty)

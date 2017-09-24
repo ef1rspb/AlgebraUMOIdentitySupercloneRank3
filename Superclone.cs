@@ -8,7 +8,7 @@ namespace AlgebraUMOIdentitySupercloneRank3
         protected int _multioperationRank;
 
         protected Multioperation[] generators;
-        protected Multioperation[] set;
+        protected Multioperation[] moSet;
 
         public int Rank => _multioperationRank;
 
@@ -21,7 +21,7 @@ namespace AlgebraUMOIdentitySupercloneRank3
         public override string ToString()
         {
             string result = "Superclone: ";
-            foreach (Multioperation m in set)
+            foreach (Multioperation m in moSet)
             {
                 result += m.ToString() + ' ';
             }
