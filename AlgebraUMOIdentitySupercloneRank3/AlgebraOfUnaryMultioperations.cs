@@ -40,12 +40,7 @@ namespace AlgebraUMOIdentitySupercloneRank3
             moSet[1] = generators[1];
             moSet[2] = generators[2];
 
-            Console.WriteLine("Rank: {0}", Rank);
-            Console.WriteLine("Arity: {0}", Arity);
-            Console.WriteLine("Result: {0}", 1 << ((int)Math.Pow(Rank, Arity + 1)));
-
             contain = new bool[1 << ((int)Math.Pow(Rank, Arity + 1))];
-            Console.WriteLine(contain.Length);
             contain[0] = true;
             contain[1] = true;
             contain[2] = true;
