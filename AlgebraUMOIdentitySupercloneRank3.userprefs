@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{3BF94905-04FA-4C74-B3AA-1604E348D89E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AlgebraUMOIdentitySupercloneRank3/AlgebraOfUnaryMultioperations.cs">
+    <Files>
+      <File FileName="AlgebraUMOIdentitySupercloneRank3/Multioperation3Unary.cs" Line="21" Column="51" />
+      <File FileName="AlgebraUMOIdentitySupercloneRank3/Multioperation.cs" Line="13" Column="9" />
+      <File FileName="AlgebraUMOIdentitySupercloneRank3/MultioperationUnary.cs" Line="8" Column="51" />
+      <File FileName="AlgebraUMOIdentitySupercloneRank3/Superclone.cs" Line="11" Column="40" />
+      <File FileName="AlgebraUMOIdentitySupercloneRank3/AlgebraOfMultioperations.cs" Line="15" Column="50" />
+      <File FileName="AlgebraUMOIdentitySupercloneRank3/AlgebraOfUnaryMultioperations.cs" Line="64" Column="9" />
+      <File FileName="AlgebraUMOIdentitySupercloneRank3/Program.cs" Line="12" Column="44" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.AlgebraUMOIdentitySupercloneRank3 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
